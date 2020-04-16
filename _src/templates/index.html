@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>To Do App</title>
     <link rel="icon" href="./favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/788bfacea6.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="page">
-      <partial src="_header.html" title="Bienvenidos a Adalab"></partial>
-      <partial src="_main.html" label="Main"></partial>
-      <partial src="_link.html" aClass="link__adalab" text="Adalab" url="https://adalab.es"></partial>
-      <partial src="_link.html" aClass="link__github" text="GitHub" url="https://github.com"></partial>
-      <partial src="_footer.html"></partial>
-    </div>
+    <h1>Time for planning</h1>
+    <form>
+      <h3 class="title-note" id="title-note"></h3>
+      <textarea name="noteText" cols="50" rows="20" maxlength="300"></textarea>
+      <select name="formColor" class="formColor" id="formColor">
+        <option value="color">Select Color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+      </select>
+      <button class="color-btn" id="color-btn">Add color</button>
+      <select name="formCategory" class="formCategory" id="formCategory">
+        <option value="category">Select category</option>
+        <option value="food">Food</option>
+        <option value="shopping">Shopping</option>
+        <option value="Gifts">Gifts</option>
+        <option value="Travel">Travel</option>
+        <option value="Work">Work</option>
+        <option value="idea">Ideas</option>
+      </select>
+      <button class="category-btn" id="category-btn">Add tag</button>
+    </form>
+
+    <div class="notes" id="notes"></div>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
   </body>
 
 </html>
